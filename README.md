@@ -17,11 +17,12 @@ When working in Code Ocean pipelines, the dataflow from a dataset to a capsule i
     - ![copy from public git](images/copy_from_public_git.png)
 2. Enter the url for this github repo
     - `https://github.com/OceanCodes/pass_fastq_pair.git`
-3. Select a starter environment that has python available. The **Python (3.8.5, miniconda 4.9.2, jupyterlab 3.0.9)** starter environment that came preinstalled with *Code Ocean* will work.
+3. Rename this capsule by clicking on **Untitled Capsule**. The name of this capsule should be **Pass Fastq Pair**.
+4. Select a starter environment that has python available. The **Python (3.8.5, miniconda 4.9.2, jupyterlab 3.0.9)** starter environment that came preinstalled with *Code Ocean* will work.
     - ![starter environment](images/starter_environment.png)
-4. Click on **Edit Post-Install Script**
+5. Click on **Edit Post-Install Script**
     - ![postinstall](images/postinstall.png)
-5. Add the following code to the postinstall script
+6. Add the following code to the postinstall script
 
 ```
 # install code ocean aux tools
@@ -32,7 +33,8 @@ chmod +x get_*
 ln -s $PWD/get_*.py /usr/local/bin
 ```
 
-6. Click on **Reproducible Run** to run this capsule using the sample data that was imported. You should end up with 1 complementary pair of paired-end reads files in the results folder.
+7. Click on **Reproducible Run** to run this capsule using the sample data that was imported. You should end up with 1 complementary pair of paired-end reads files in the results folder.
+    - The first time you run this capsule you will have a build log in the results folder. Every subsequent run will not have this build log unless you make a change to the environment. There is no need to change the environment.
 
 
 <hr>
