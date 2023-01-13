@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-# install code ocean aux tools
-git clone https://github.com/zappuf/aux_tools.git
-cd aux_tools/
-git checkout 6c40bb90aae58a725870601626efae5e542764ef
-chmod +x get_*
-ln -s $PWD/get_*.py /usr/local/bin
