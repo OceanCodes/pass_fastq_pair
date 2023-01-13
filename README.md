@@ -33,7 +33,8 @@ chmod +x get_*
 ln -s $PWD/get_*.py /usr/local/bin
 ```
 
-7. Click on **Reproducible Run** to run this capsule using the sample data that was imported. You should end up with 1 complementary pair of paired-end reads files in the results folder.
+7. Commit your changes by clicking on the green commit button in the top right.
+8. Click on **Reproducible Run** to run this capsule using the sample data that was imported. You should end up with 1 complementary pair of paired-end reads files in the results folder.
     - The first time you run this capsule you will have a build log in the results folder. Every subsequent run will not have this build log unless you make a change to the environment. There is no need to change the environment.
 
 
