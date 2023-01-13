@@ -1,7 +1,7 @@
-import glob
 import shutil
 import sys
 import subprocess
+from glob import glob
 from pathlib import Path
 
 import config
@@ -10,7 +10,7 @@ fastq_dict = {}
 pair_dict = {}
 
 
-for path in glob.glob(str(f"{config.dir_path}/**/*"), recursive=True):
+for path in glob(str(f"{config.dir_path}/**/*"), recursive=True):
     if Path(path).is_file():
         this_file = str(path)
         prefix = subprocess.run(["get_read_prefix.py", this_file], capture_output=True).stdout
