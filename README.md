@@ -7,7 +7,7 @@
 
 ### Background
 
-When working in Code Ocean pipelines, the dataflow from a dataset to a capsule is to either send one file at-a-time (default behavior) or send all the data (global toggle on) to the capsule. You would want to use the default behavior of sending one file at-a-time when working with sequencing data so that there is an instance of the capsule for every file. However, if you're working with paired-end reads files, the default behavior will separate forward and reverse reads files. This capsule solves this problem by passing 1 pair of paired-end reads files at-a-time wherever this capsule is used in a pipeline.
+When working in Code Ocean pipelines, the dataflow from a dataset to a capsule is to either send one file at-a-time, the default behavior (global toggle off), or send all the data (global toggle on) to the capsule. You would want to use the default behavior of sending one file at-a-time when working with sequencing data so that there is an instance of the capsule for every file. However, if you're working with paired-end reads files, the default behavior will separate forward and reverse reads files. This capsule solves this problem by passing 1 pair of paired-end reads files at-a-time wherever this capsule is used in a pipeline.
 
 <hr>
 
