@@ -64,5 +64,5 @@ As you can see from the image of the pipeline example above, the pipeline accept
 
 <hr>
 
-[Code Ocean](https://codeocean.com/) is a computational research platform with a focus on [FAIR priciples](https://www.go-fair.org/fair-principles/). Visit our [Open Science Library](https://codeocean.com/explore) for free code and to demo our free product. Contact our [sales](https://codeocean.com/contact-us/sales/) for a demo of our [enterprise VPC product](https://codeocean.com/product/).<br /><br />
+[Code Ocean](https://codeocean.com/) is a cloud-based computational platform that aims to make it easy for researchers to share, discover, and run code. Visit our [Open Science Library](https://codeocean.com/explore) for free code and to demo our free product. Contact our [sales](https://codeocean.com/contact-us/sales/) for a demo of our [enterprise VPC product](https://codeocean.com/product/).<br /><br />
 [![Code Ocean Logo](images/CO_logo_68x36.png)](https://www.codeocean.com)
