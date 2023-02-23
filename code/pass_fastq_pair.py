@@ -13,7 +13,9 @@ pair_dict = {}
 for path in glob(str(f"{config.dir_path}/**/*"), recursive=True):
     if Path(path).is_file():
         this_file = str(path)
-        prefix = subprocess.run(["get_read_prefix.py", this_file], capture_output=True).stdout
+        prefix = subprocess.run(
+            ["get_read_prefix.py", this_file], capture_output=True
+        ).stdout
         prefix = prefix.decode("utf-8").strip()
         if prefix in fastq_dict:
             if this_file not in fastq_dict[prefix]:
@@ -24,7 +26,7 @@ for path in glob(str(f"{config.dir_path}/**/*"), recursive=True):
         else:
             fastq_dict[prefix] = [this_file]
 
-for k,v in fastq_dict.items():
+for k, v in fastq_dict.items():
     if len(v) == 3:
         # this is the pair to move into results folder
         for elem in v:
@@ -39,4 +41,6 @@ for k,v in fastq_dict.items():
                 pair_dict[parent_path] = [elem]
         break
 
-print("There were no reads files identified as a complementary pair to move into results. Please check your data as well as your mapping configuration in the pipelines UI.")
+print(
+    "There were no reads files identified as a complementary pair to move into results. Please check your data as well as your mapping configuration in the pipelines UI."
+)
