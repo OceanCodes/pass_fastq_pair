@@ -27,11 +27,12 @@ When working in Code Ocean pipelines, the dataflow from a dataset to a capsule i
 
 ```
 # install code ocean aux tools
-git clone https://github.com/zappuf/aux_tools.git
-cd aux_tools/
-git checkout 7eb57d320eb77d6a9f0d3dca4345bd6f9bc20c49
-chmod +x get_*
-ln -s $PWD/get_*.py /usr/local/bin
+mkdir -p /opt
+cd /opt
+git clone https://github.com/codeocean/co_aux_tools.git
+cd co_aux_tools/
+chmod +x {g,s}et_*
+ln -s $PWD/{g,s}et_*.py /usr/local/bin
 ```
 
 7. Commit your changes by clicking on the green commit button in the top right.
